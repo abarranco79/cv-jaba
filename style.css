@@ -1,0 +1,149 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100;200;300;400;500;600&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Raleway', sans-serif;
+    background-color: #2b7bb1;
+}
+
+header{
+    padding: 20px 0;
+    width: 100%;
+    background: #2a5978;
+}
+
+.head-container{
+    width: 85%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+}
+
+.nombre{
+    width: 75%;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+    color: #ffffff;
+    font-weight: 600;
+}
+
+.foto{
+    width: 20%;
+}
+
+.foto img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.navegacion{
+    width: 100%;
+    text-align: center;
+}
+
+.menu{
+    width: 100%;
+    margin: 0 auto;
+    padding: 20px 0 0 0;
+}
+
+.menu a{
+    color: #ffffff;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px 20px;
+}
+
+.menu a:hover{
+    text-decoration: underline;
+}
+
+.datos-container{
+    width: 90%;
+    margin: 5px auto;
+    display: flex;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 4px 4px 13px 0px rgba(0,0,0,0.75);
+}
+
+.datos{
+    width: 25%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.lateral1{
+    padding-bottom: 20px;
+}
+
+.lateral1 ul{
+    padding-left: 20px;
+}
+
+.h3-datos{
+    border-bottom: #000000 solid 3px;
+}
+
+.formacion{
+    width: 65%;
+    padding: 20px;
+    border-left: #000000 solid 3px;
+}
+
+.titulo{
+    text-align: center;
+}
+
+.datos1{
+    padding: 10px 0 15px 0;
+}
+
+.formacion1{
+    padding: 10px 30px;
+}
+
+.formacion1 ul{
+    padding-left: 40px;
+}
+
+footer{
+    width: 100%;
+    padding: 20px 0;
+}
+
+.footer-container{
+    width: 85%;
+    margin: 0 auto;
+
+}
+
+@media (max-width: 1058px) {
+    .datos-container{
+        flex-direction: column-reverse;
+    }
+
+    .datos{
+        width: 100%;
+        border-right: 0;
+        padding-top: 0;
+    }
+    
+    .formacion{
+        width: 100%;
+        border-left: none;
+    }
+}
+
+@media (max-width: 500px) {
+    .head-container{
+        flex-direction: column;
+    }
+}
